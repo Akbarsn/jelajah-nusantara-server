@@ -12,8 +12,11 @@ module.exports = {
     const DB_URI = env.Database.DB_Uri;
     const NODE_ENV = env.Node_Env;
 
+    app.use(express.json());
+    app.use(express.urlencoded({ extended: true }));
+
     //Initialize Logger using WinstonJS
-    const logger = require('./loader/winston').InitLogger(winston, NODE_ENV)
+    const logger = require("./loader/winston").InitLogger(winston, NODE_ENV);
 
     //Initialize and connecting to Mongo DB
     require("./loader/mongodb").InitDB(mongoose, DB_URI, logger);
@@ -21,6 +24,14 @@ module.exports = {
     //Initialize API Route
     const api = require("./route").InitRoute(express.Router());
     app.use("/", api);
+
+    const handler = require("./middleware/ErrorHandler").GetErrorHandler(
+      logger
+    );
+    //Error Handler
+    app.use(handler.handleErrors);
+    //Not Found Handler
+    app.use(handler.handleNotFound);
 
     //Serving the server
     app.listen(PORT, logger.info(`Listening to ${HOST}:${PORT}`));
