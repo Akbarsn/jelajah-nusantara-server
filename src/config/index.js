@@ -4,6 +4,7 @@ module.exports = {
 
     const EnvVar = {
       Node_Env: process.env.NODE_ENV,
+      JWT_Secret: process.env.JWT_SECRET,
       Server: {
         Host: process.env.HOST,
         Port: process.env.PORT,
