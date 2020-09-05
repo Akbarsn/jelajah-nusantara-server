@@ -1,24 +1,16 @@
 module.exports = {
-  Route() {
-    const utilityRoute = require("./utility");
-    const authorizationRoute = require("./auth");
-
-    const route = {
-      Utility: {
-        Ping: utilityRoute.PingRoute,
-      },
-      Authorization: {
-        Register: authorizationRoute.RegisterUser,
-      },
-    };
-
-    return route;
-  },
   InitRoute(router) {
-    const route = this.Route();
+    const utilityRoute = require("./UtilityRoute");
+    const authorizationRoute = require("./AuthRoute");
+    const homepageRoute = require("./HomepageRoute");
 
-    router.get("/ping", route.Utility.Ping);
-    router.post("/register", route.Authorization.Register);
+    const { CheckToken } = require("../middleware/CheckTokenHandler");
+
+    router.get("/ping", utilityRoute.PingRoute);
+    router.get("/migrate", utilityRoute.MigrateRoute);
+    router.use("/auth", authorizationRoute.AuthRoute(router));
+
+    router.use("/home", CheckToken, homepageRoute.HomepageRoute(router));
 
     return router;
   },
