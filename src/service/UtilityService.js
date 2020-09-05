@@ -38,6 +38,7 @@ module.exports = {
       await IslandModel.deleteMany({});
       await IslandModel.insertMany([
         {
+          _id: 1,
           name: "Sumatra",
           imgSrc: `${process.cwd()}/public/image/sumatra.png`,
           trivias: [
@@ -54,6 +55,7 @@ module.exports = {
           ],
         },
         {
+          _id: 2,
           name: "Jawa",
           imgSrc: `${process.cwd()}/public/image/jawa.png`,
           trivias: [
