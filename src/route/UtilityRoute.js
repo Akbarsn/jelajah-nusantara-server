@@ -1,5 +1,3 @@
-const User = require("../model/User");
-const Island = require("../model/Island");
 const UtilityService = require("../service/UtilityService");
 const { GeneralError } = require("../utils/Error");
 
@@ -11,7 +9,7 @@ module.exports = {
   },
   async MigrateRoute(req, res, next) {
     try {
-      const response = await UtilityService.MigrateAll(User, Island);
+      const response = await UtilityService.MigrateAll();
 
       if (response) {
         res.status(200).json({
