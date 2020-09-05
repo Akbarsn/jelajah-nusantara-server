@@ -28,7 +28,6 @@ module.exports = {
           island,
           stories: stories,
         };
-        console.log(response);
 
         return { status: true, data: response };
       } else {
