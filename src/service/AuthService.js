@@ -107,9 +107,12 @@ module.exports = {
           username: username,
         });
 
-        const token = this.CreateToken(user);
-
-        return { status: true, token: token };
+        if (user) {
+          const token = this.CreateToken(user);
+          return { status: true, token: token };
+        } else {
+          return { status: false, error: new BadRequest("Username not found") };
+        }
       } catch (error) {
         return {
           status: false,
