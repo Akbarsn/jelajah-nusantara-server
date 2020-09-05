@@ -9,8 +9,6 @@ module.exports = {
   async CheckToken(req, res, next) {
     const header = req.headers.authorization;
     try {
-
-      console.log("here")
       if (header) {
         const token = header.split(" ")[1];
         if (token) {
