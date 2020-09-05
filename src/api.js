@@ -14,6 +14,7 @@ module.exports = {
 
     app.use(express.json());
     app.use(express.urlencoded({ extended: true }));
+    app.use('/public', express.static('./public'))
 
     //Initialize Logger using WinstonJS
     const logger = require("./loader/winston").InitLogger(winston, NODE_ENV);
