@@ -4,6 +4,7 @@
   "description": "Server Side for Jelajah Nusantara Server",
   "main": "index.js",
   "scripts": {
+    "start":"node index.js",
     "test": "mocha",
     "dev": "nodemon"
   },
