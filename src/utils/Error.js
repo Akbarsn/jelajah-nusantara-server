@@ -1,35 +1,36 @@
 class GeneralError extends Error {
-    constructor (message) {
-        super()
-        this.message = message
-    }
+  constructor(message, error) {
+    super();
+    this.message = message;
+    this.error = error || "";
+  }
 
-    getCode () {
-        if (this instanceof BadRequest) {
-            return 400
-        }
-        if (this instanceof NotFound) {
-            return 404
-        }
-        if (this instanceof NoToken) {
-            return 401
-        }
-        if (this instanceof NotAcceptable) {
-            return 406
-        }
-        return 500
+  getCode() {
+    if (this instanceof BadRequest) {
+      return 400;
     }
+    if (this instanceof NotFound) {
+      return 404;
+    }
+    if (this instanceof NoToken) {
+      return 401;
+    }
+    if (this instanceof NotAcceptable) {
+      return 406;
+    }
+    return 500;
+  }
 }
 
-class BadRequest extends GeneralError { }
-class NotFound extends GeneralError { }
-class NoToken extends GeneralError { }
-class NotAcceptable extends GeneralError { }
+class BadRequest extends GeneralError {}
+class NotFound extends GeneralError {}
+class NoToken extends GeneralError {}
+class NotAcceptable extends GeneralError {}
 
 module.exports = {
-    GeneralError,
-    BadRequest,
-    NotFound,
-    NoToken,
-    NotAcceptable
-}
+  GeneralError,
+  BadRequest,
+  NotFound,
+  NoToken,
+  NotAcceptable,
+};

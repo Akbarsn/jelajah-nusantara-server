@@ -13,6 +13,7 @@ module.exports = {
       }
 
       logger.error(`${500} ${err.message}`);
+      logger.error(`${err.error}`);
       return res.status(500).json({
         status: "error",
         message: err.message,
