@@ -58,16 +58,9 @@ module.exports = {
             username: validate.data.value.username,
           });
 
-          const query = await user.save();
+          await user.save();
 
-          if (query) {
-            return { status: true, data: user };
-          } else {
-            return {
-              status: false,
-              error: new GeneralError("Insert failed"),
-            };
-          }
+          return { status: true, data: user };
         } else {
           return check.error;
         }
@@ -77,7 +70,7 @@ module.exports = {
     } catch (error) {
       return {
         status: false,
-        error: new GeneralError("Insert failed"),
+        error: new GeneralError("Insert failed", error),
       };
     }
   },
@@ -116,7 +109,7 @@ module.exports = {
       } catch (error) {
         return {
           status: false,
-          error: new GeneralError("Query failed"),
+          error: new GeneralError("Query failed", error),
         };
       }
     } else {
