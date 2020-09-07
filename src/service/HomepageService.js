@@ -3,12 +3,10 @@ const { GeneralError, BadRequest } = require("../utils/Error");
 module.exports = {
   async GetAllIsland(IslandModel) {
     try {
-      const islands = await IslandModel.find({});
+      const islands = await IslandModel.find({}, '_id name imgSrc');
 
       return { status: true, data: islands };
     } catch (error) {
-      console.log("Here");
-      console.log(error);
       return { status: false, error: error };
     }
   },
@@ -22,10 +20,10 @@ module.exports = {
       if (island) {
         const stories = await StoryModel.find({
           islandID: IslandID,
-        });
+        }, '_id islandID title description imgSrc');
 
         const response = {
-          island,
+          detail: island,
           stories: stories,
         };
 
@@ -34,7 +32,7 @@ module.exports = {
         return { status: false, error: new BadRequest("Island ID is wrong") };
       }
     } catch (error) {
-      return { status: false, error: new GeneralError("Query failed") };
+      return { status: false, error: new GeneralError("Query failed", error) };
     }
   },
 };
