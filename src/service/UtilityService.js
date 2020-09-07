@@ -10,7 +10,7 @@ function GetBaseURL() {
 
   // return `${host}:${port}`;
 
-  return "https://jelajah-nusantara.herokuapp.com"
+  return "https://jelajah-nusantara.herokuapp.com";
 }
 
 module.exports = {
@@ -100,6 +100,7 @@ module.exports = {
       await StoryModel.deleteMany({});
       await StoryModel.insertMany([
         {
+          _id: 1,
           islandID: 1,
           title: "Atu Belah Atu Bertangkup",
           description: "Cerita Rakyat Dari Provinsi Nangroe Aceh Dasusalam",
@@ -131,7 +132,46 @@ module.exports = {
                 "Si suami segera masuk kehutan dengan harapan mendapatkan seekor kijang yang gemuk. Istri dan anak anaknya tentunya sangat bahagia jika makan daging rusa yang lezat",
             },
           ],
+          quiz: [
+            {
+              question:
+                "Hiduplah sepasang suami isteri yang sangat miskin. Apakah penulisan kata “isteri” sudah benar ? Jika salah, pilih kata yang benar",
+              answerA: "Benar, menggunakan kata 'Isteri'",
+              answerB: "Salah, yang benar 'istari",
+              answerC: "Salah, yang benar 'istri",
+              answer: "C",
+            },
+            // {
+            //   question: "",
+            //   answerA: "",
+            //   answerB: "",
+            //   answerC: "",
+            //   answer: ""
+            // },
+          ],
         },
+        // {
+        //   _id: 2,
+        //   islandID: 1,
+        //   title: "",
+        //   description: "",
+        //   imgSrc: `${GetBaseURL()}/public/story/`,
+        //   steps: [
+        //     {
+        //       imgSrc: `${GetBaseURL()}/public/story/`,
+        //       content: "",
+        //     },
+        //   ],
+        //   quiz: [
+        //     {
+        //       question: "",
+        //       answerA: "",
+        //       answerB: "",
+        //       answerC: "",
+        //       answer: "",
+        //     },
+        //   ],
+        // },
       ]);
 
       return true;
