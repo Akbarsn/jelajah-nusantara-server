@@ -3,6 +3,7 @@ module.exports = {
     const utilityRoute = require("./UtilityRoute");
     const authorizationRoute = require("./AuthRoute");
     const homepageRoute = require("./HomepageRoute");
+    const storyRoute = require("./StoryRoute");
 
     const { CheckToken } = require("../middleware/CheckTokenHandler");
 
@@ -11,6 +12,7 @@ module.exports = {
     router.use("/auth", authorizationRoute.AuthRoute(router));
 
     router.use("/home", CheckToken, homepageRoute.HomepageRoute(router));
+    router.use("/story", CheckToken, storyRoute.StoryRoute(router));
 
     return router;
   },
