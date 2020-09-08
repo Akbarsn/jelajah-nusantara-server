@@ -15,10 +15,13 @@ const StorySchema = new mongoose.Schema({
   quiz: [
     {
       question: String,
-      answer: String,
-      answerA: String,
-      answerB: String,
-      answerC: String
+      answers: [
+        {
+          id: Number,
+          answer: String,
+        },
+      ],
+      correctAnswerId: Number,
     },
   ],
 });
