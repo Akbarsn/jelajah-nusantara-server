@@ -1107,19 +1107,109 @@ module.exports = {
           ],
           quiz: [
             {
-              question: "",
+              question: "Kadru dan Winata, jagalah telur telur itu apapun yang menetas harus kalian rawat seperti anak sendiri. Sinonim atau persamaan kata dari kata “pulih” adalah ?",
               answers: [
                 {
                   id: 1,
-                  answer: "",
+                  answer: "Pelihara",
                 },
                 {
                   id: 2,
-                  answer: "",
+                  answer: "Beri makan",
                 },
                 {
                   id: 3,
-                  answer: "",
+                  answer: "Sakit",
+                },
+              ],
+              correctAnswerId: 0,
+            },
+            {
+              question: "Keesokan harinya Kadru menemui ayahnya bermaksud untuk meminta mendatangkan kuda ucai suara. Apakah penulisan kata “maksud” sudah benar ? Jika salah, pilih kata yang benar ?",
+              answers: [
+                {
+                  id: 1,
+                  answer: "Sudah benar “maksud”",
+                },
+                {
+                  id: 2,
+                  answer: "Salah yang benar “maksut”",
+                },
+                {
+                  id: 3,
+                  answer: "Salah, yang benar “maksub”",
+                },
+              ],
+              correctAnswerId: 1,
+            },
+            {
+              question: "Setelah mengetahui warna kuda ucai suara Kadru memiliki ide dan berkata kepada anak anaknya. Sinonim atau persamaan kata dari kata “ide” adalah ?",
+              answers: [
+                {
+                  id: 1,
+                  answer: "Pintar",
+                },
+                {
+                  id: 2,
+                  answer: "Kreatif",
+                },
+                {
+                  id: 3,
+                  answer: "Pendapat",
+                },
+              ],
+              correctAnswerId: 3,
+            },
+            {
+              question: "Namun, ketika Kadru hendak memberikan cangkir berisi tirta amarta kepada anak anaknya tiba tiba datang Dewa Indra. Antonim atau lawan kata dari kata “memberikan” adalah ?",
+              answers: [
+                {
+                  id: 1,
+                  answer: "Mengambilkan",
+                },
+                {
+                  id: 2,
+                  answer: "Menerima",
+                },
+                {
+                  id: 3,
+                  answer: "Melepaskan",
+                },
+              ],
+              correctAnswerId: 2,
+            },
+            {
+              question: "Sebagian isi tirta amarta jatuh kerumput ilalang yang berdaun. Antonim atau lawan kata dari kata “jatuh” adalah ?",
+              answers: [
+                {
+                  id: 1,
+                  answer: "Runtuh",
+                },
+                {
+                  id: 2,
+                  answer: "Berdiri",
+                },
+                {
+                  id: 3,
+                  answer: "Bangun",
+                },
+              ],
+              correctAnswerId: 3,
+            },
+            {
+              question: "Pesan moral yang dapat diambil dari cerita rakyat Legenda Wisnu Kencana dari Provinsi Bali adalah ? ",
+              answers: [
+                {
+                  id: 1,
+                  answer: "Bersaudara tidak boleh saling mengejek",
+                },
+                {
+                  id: 2,
+                  answer: "Kita harus memiliki sikap tangguh dan pantang menyerah",
+                },
+                {
+                  id: 3,
+                  answer: "Kita tidak boleh berprasangka buruk kepada orang lain",
                 },
               ],
               correctAnswerId: 0,
