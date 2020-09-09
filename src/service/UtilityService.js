@@ -326,7 +326,7 @@ module.exports = {
                   answer: "Kita harus berbakti kepada kedua orang tua",
                 },
               ],
-              correctAnswerId: 0,
+              correctAnswerId: 2,
             },
           ],
         },
@@ -541,7 +541,7 @@ module.exports = {
                   answer: "Pentingnya menjaga persatuan dan kesatuan bangsa",
                 },
               ],
-              correctAnswerId: 0,
+              correctAnswerId: 3,
             },
           ],
         },
@@ -711,7 +711,8 @@ module.exports = {
               correctAnswerId: 1,
             },
             {
-              question: "Teriknya siang, angin kencang, dan malam hari yang menggigil dilaluinya tanpa menyerah. Antonim atau lawan kata dari kata “kencang” adalah ?",
+              question:
+                "Teriknya siang, angin kencang, dan malam hari yang menggigil dilaluinya tanpa menyerah. Antonim atau lawan kata dari kata “kencang” adalah ?",
               answers: [
                 {
                   id: 1,
@@ -729,7 +730,8 @@ module.exports = {
               correctAnswerId: 2,
             },
             {
-              question: "Pesan moral yang dapat diambil dari cerita rakyat Legenda Batu Kuwung dari Provinsi Banten adalah ?",
+              question:
+                "Pesan moral yang dapat diambil dari cerita rakyat Legenda Batu Kuwung dari Provinsi Banten adalah ?",
               answers: [
                 {
                   id: 1,
@@ -744,7 +746,7 @@ module.exports = {
                   answer: "Kita wajib menaati perintah orang tua",
                 },
               ],
-              correctAnswerId: 0,
+              correctAnswerId: 1,
             },
           ],
         },
@@ -873,7 +875,8 @@ module.exports = {
           ],
           quiz: [
             {
-              question: "Pada jaman dahulu kala, ada seorang anak kecil yang hidup sebatang kara. Apakah penulisan kata “jaman” sudah benar ? Jika salah, pilih kata yang benar ?",
+              question:
+                "Pada jaman dahulu kala, ada seorang anak kecil yang hidup sebatang kara. Apakah penulisan kata “jaman” sudah benar ? Jika salah, pilih kata yang benar ?",
               answers: [
                 {
                   id: 1,
@@ -891,7 +894,8 @@ module.exports = {
               correctAnswerId: 2,
             },
             {
-              question: "Nah, rasakan sekarang tubuhmu bauk busuk. Apakah penulisan kata “bauk” sudah benar ? Jika salah, pilih kata yang benar ?",
+              question:
+                "Nah, rasakan sekarang tubuhmu bauk busuk. Apakah penulisan kata “bauk” sudah benar ? Jika salah, pilih kata yang benar ?",
               answers: [
                 {
                   id: 1,
@@ -909,7 +913,8 @@ module.exports = {
               correctAnswerId: 2,
             },
             {
-              question: "Selesai makan, tiba tiba saja tubuh anak kecil itu pulih seperti sedia kala. Sinonim atau persamaan kata dari kata “pulih” adalah ?",
+              question:
+                "Selesai makan, tiba tiba saja tubuh anak kecil itu pulih seperti sedia kala. Sinonim atau persamaan kata dari kata “pulih” adalah ?",
               answers: [
                 {
                   id: 1,
@@ -927,7 +932,8 @@ module.exports = {
               correctAnswerId: 1,
             },
             {
-              question: "“Tapi, mana bisa ada banjir?” ucap nenek tidak percaya Sinonim atau persamaan kata dari kata “percaya” adalah ?",
+              question:
+                "“Tapi, mana bisa ada banjir?” ucap nenek tidak percaya Sinonim atau persamaan kata dari kata “percaya” adalah ?",
               answers: [
                 {
                   id: 1,
@@ -944,26 +950,28 @@ module.exports = {
               ],
               correctAnswerId: 3,
             },
-            // {
-            //   question: "Sungguh aneh tidak ada satu pun yang bisa mencabut lidi itu Sinonim atau persamaan kata dari kata “percaya” adalah ?",
-            //   answers: [
-            //     {
-            //       id: 1,
-            //       answer: "",
-            //     },
-            //     {
-            //       id: 2,
-            //       answer: "",
-            //     },
-            //     {
-            //       id: 3,
-            //       answer: "",
-            //     },
-            //   ],
-            //   correctAnswerId: 0,
-            // },
             {
-              question: "Pesan moral yang dapat diambil dari cerita rakyat Asal Mula Rawa Pening dari Provinsi Jawa Tengah adalah ? ",
+              question:
+                "Sungguh aneh tidak ada satu pun yang bisa mencabut lidi itu Sinonim atau persamaan kata dari kata “bisa” adalah ?",
+              answers: [
+                {
+                  id: 1,
+                  answer: "Kuat",
+                },
+                {
+                  id: 2,
+                  answer: "Mampu",
+                },
+                {
+                  id: 3,
+                  answer: "Yakin",
+                },
+              ],
+              correctAnswerId: 2,
+            },
+            {
+              question:
+                "Pesan moral yang dapat diambil dari cerita rakyat Asal Mula Rawa Pening dari Provinsi Jawa Tengah adalah ? ",
               answers: [
                 {
                   id: 1,
@@ -978,7 +986,7 @@ module.exports = {
                   answer: "Jadilah orang yang pantang menyerah",
                 },
               ],
-              correctAnswerId: 0,
+              correctAnswerId: 1,
             },
           ],
         },
@@ -1107,7 +1115,8 @@ module.exports = {
           ],
           quiz: [
             {
-              question: "Kadru dan Winata, jagalah telur telur itu apapun yang menetas harus kalian rawat seperti anak sendiri. Sinonim atau persamaan kata dari kata “pulih” adalah ?",
+              question:
+                "Kadru dan Winata, jagalah telur telur itu apapun yang menetas harus kalian rawat seperti anak sendiri. Sinonim atau persamaan kata dari kata “rawat” adalah ?",
               answers: [
                 {
                   id: 1,
@@ -1122,10 +1131,11 @@ module.exports = {
                   answer: "Sakit",
                 },
               ],
-              correctAnswerId: 0,
+              correctAnswerId: 1,
             },
             {
-              question: "Keesokan harinya Kadru menemui ayahnya bermaksud untuk meminta mendatangkan kuda ucai suara. Apakah penulisan kata “maksud” sudah benar ? Jika salah, pilih kata yang benar ?",
+              question:
+                "Keesokan harinya Kadru menemui ayahnya bermaksud untuk meminta mendatangkan kuda ucai suara. Apakah penulisan kata “maksud” sudah benar ? Jika salah, pilih kata yang benar ?",
               answers: [
                 {
                   id: 1,
@@ -1143,7 +1153,8 @@ module.exports = {
               correctAnswerId: 1,
             },
             {
-              question: "Setelah mengetahui warna kuda ucai suara Kadru memiliki ide dan berkata kepada anak anaknya. Sinonim atau persamaan kata dari kata “ide” adalah ?",
+              question:
+                "Setelah mengetahui warna kuda ucai suara Kadru memiliki ide dan berkata kepada anak anaknya. Sinonim atau persamaan kata dari kata “ide” adalah ?",
               answers: [
                 {
                   id: 1,
@@ -1161,7 +1172,8 @@ module.exports = {
               correctAnswerId: 3,
             },
             {
-              question: "Namun, ketika Kadru hendak memberikan cangkir berisi tirta amarta kepada anak anaknya tiba tiba datang Dewa Indra. Antonim atau lawan kata dari kata “memberikan” adalah ?",
+              question:
+                "Namun, ketika Kadru hendak memberikan cangkir berisi tirta amarta kepada anak anaknya tiba tiba datang Dewa Indra. Antonim atau lawan kata dari kata “memberikan” adalah ?",
               answers: [
                 {
                   id: 1,
@@ -1179,7 +1191,8 @@ module.exports = {
               correctAnswerId: 2,
             },
             {
-              question: "Sebagian isi tirta amarta jatuh kerumput ilalang yang berdaun. Antonim atau lawan kata dari kata “jatuh” adalah ?",
+              question:
+                "Sebagian isi tirta amarta jatuh kerumput ilalang yang berdaun. Antonim atau lawan kata dari kata “jatuh” adalah ?",
               answers: [
                 {
                   id: 1,
@@ -1197,7 +1210,8 @@ module.exports = {
               correctAnswerId: 3,
             },
             {
-              question: "Pesan moral yang dapat diambil dari cerita rakyat Legenda Wisnu Kencana dari Provinsi Bali adalah ? ",
+              question:
+                "Pesan moral yang dapat diambil dari cerita rakyat Legenda Wisnu Kencana dari Provinsi Bali adalah ? ",
               answers: [
                 {
                   id: 1,
@@ -1205,14 +1219,16 @@ module.exports = {
                 },
                 {
                   id: 2,
-                  answer: "Kita harus memiliki sikap tangguh dan pantang menyerah",
+                  answer:
+                    "Kita harus memiliki sikap tangguh dan pantang menyerah",
                 },
                 {
                   id: 3,
-                  answer: "Kita tidak boleh berprasangka buruk kepada orang lain",
+                  answer:
+                    "Kita tidak boleh berprasangka buruk kepada orang lain",
                 },
               ],
-              correctAnswerId: 0,
+              correctAnswerId: 2,
             },
           ],
         },
